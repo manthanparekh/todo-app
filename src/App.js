@@ -1,7 +1,14 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
+
+  const deleteTask(id) {
+    const newTasks = tasks.filter((task) => {
+      return task.id !== id;
+    });
+  }
+
   return (
     <div className="App">
       <header className="App-header">
