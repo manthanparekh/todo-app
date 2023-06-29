@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import uuid from 'react-build';
+import React, { useState } from "react";
 
 const AddTodo ({ addTodo }) => {
     const [content, setContent] = useState('');
@@ -20,7 +19,6 @@ const AddTodo ({ addTodo }) => {
         }
 
         const todo = {
-            id: uuid(),
             body: content
         };
 
